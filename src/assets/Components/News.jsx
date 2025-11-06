@@ -1,13 +1,34 @@
 import React from 'react'
 import Card from './Card'
+import { motion } from 'motion/react'
 
 const News = () => {
   return (
-    <div className='bg-black p-18'>
-      <div className='text-white h-screen bg-[url("public/Lucid_Origin_Create_a_realistic_horizontal_torn_paper_edge_tex_1.jpg")] rounded-4xl m-auto object-cover border-none p-10 w-[85vw]'>
-        <h1 className='text-black font-[unnamed] font-extrabold text-7xl'>Latest Happenings</h1>
-        <Card/>
-      </div>
+    <div className='p-10'>
+      <motion.h1
+      initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.6,
+          ease: "easeOut"
+        }}
+        viewport={{ once: true, amount: 0.2 }}
+       className='text-4xl font-extrabold'>THE LATEST</motion.h1>
+      <motion.div
+      initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.6,
+          ease: "easeOut"
+        }}
+        viewport={{ once: true, amount: 0.2 }}
+      className="card flex overflow-scroll hide-scrollbar">
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      </motion.div>
     </div>
   )
 }
