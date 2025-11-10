@@ -58,7 +58,7 @@ const WorldSection = () => {
     >
       <div
         ref={bgRef}
-        className="absolute inset-0 bg-[url('https://thumbs.dreamstime.com/b/realistic-earth-high-quality-render-planet-isolated-black-background-40044176.jpg')] bg-cover bg-center will-change-transform"
+        className="absolute inset-0 bg-[url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/09/grandt-theft-auto-6-release-window-leak.jpg')] bg-cover bg-center will-change-transform"
       />
 
       <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
@@ -68,7 +68,7 @@ const WorldSection = () => {
         className="relative w-[25vw] h-[25vw] bg-linear-to-r from-blue-500 via-cyan-400 to-blue-700 rounded-full shadow-[0_0_80px_rgba(0,255,255,0.6)]"
       >
         <div className="absolute flex justify-center items-center overflow-hidden inset-0 rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.25),transparent_70%)]" >
-            <img className="w-full" src="public/realistic-earth-high-quality-render-planet-isolated-black-background-40044176.webp" alt="" />
+            <img className="w-full" src="https://thumbs.dreamstime.com/b/realistic-earth-high-quality-render-planet-isolated-black-background-40044176.jpg" alt="" />
             </div>
       </div>
 
