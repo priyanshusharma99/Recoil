@@ -58,7 +58,7 @@ const WorldSection = () => {
     >
       <div
         ref={bgRef}
-        className="absolute inset-0 bg-[url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/09/grandt-theft-auto-6-release-window-leak.jpg')] bg-cover bg-center will-change-transform"
+        className="absolute inset-0 bg-[url('https://thumbs.dreamstime.com/b/realistic-earth-high-quality-render-planet-isolated-black-background-40044176.jpg')] bg-cover bg-center will-change-transform"
       />
 
       <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
