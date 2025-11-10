@@ -97,6 +97,7 @@ const App = () => {
     })
   }, [showContent])
   
+  
   return (
     <>
     <div className='w-full h-full bg-black svg fixed top-0 left-0 z-100 overflow-hidden'>

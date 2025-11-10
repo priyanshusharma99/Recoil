@@ -127,3 +127,12 @@ html, body{
     @apply bg-background text-foreground;
   }
 }
+
+/* In your global/index.css file */
+html {
+  height: 100%;
+}
+body {
+  margin: 0; /* Remove default margins that can cause glitches */
+  /* min-height: 100vh; */
+}
