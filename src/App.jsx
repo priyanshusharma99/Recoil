@@ -8,6 +8,7 @@ import Footer from './assets/Components/Footeer'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollVideo from './assets/Components/Scrollvideo'
 import Characters from './assets/Components/Characters'
+import { StickyCard002 } from './assets/Components/skiper17'
 gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
@@ -165,8 +166,9 @@ const App = () => {
         <div className="lower">
         <Lower/>
         </div>
-        <Characters/>
-        
+        <div className="h-screen w-full justify-center flex items-center bg-gray-900">
+          <Characters/>
+    </div>
         <Footer/>
       </div>
     )}
