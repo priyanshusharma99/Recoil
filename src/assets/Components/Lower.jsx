@@ -14,7 +14,7 @@ const Lower = () => {
         <p className='text-white font-[Arial] text1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum qui eum perspiciatis totam, dicta repudiandae praesentium vero ipsa iusto quod.</p>
         <div className="text-white font-[Arial] font-extrabold text-3xl w-full flex justify-center">
         <a href='https://www.rockstargames.com/VI' target='_blank'>
-        <button className='bg-amber-500 py-2 px-5 text1 rounded-2xl '>Download</button>
+        <button className='cursor-pointer bg-amber-500 py-2 px-5 text1 rounded-2xl '>Download</button>
         </a>
         </div>
       </div>
