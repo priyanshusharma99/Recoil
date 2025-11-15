@@ -56,6 +56,7 @@ const WorldSection = () => {
       ref={containerRef}
       className="relative w-full h-screen overflow-hidden flex flex-col justify-center items-center"
     >
+      <div className="absolute z-20 top-0 left-0 w-full py-10 px-10 bg-linear-to-b from-black to-transparent"></div>
       <div
         ref={bgRef}
         className="absolute inset-0 bg-[url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/09/grandt-theft-auto-6-release-window-leak.jpg')] bg-cover bg-center will-change-transform"
@@ -74,9 +75,9 @@ const WorldSection = () => {
 
       <h1
         ref={textRef}
-        className="absolute bottom-[15vh] text-white text-6xl font-extrabold tracking-[0.3em] uppercase"
+        className="absolute font-[Arial] bottom-[15vh] text-white text-6xl font-extrabold tracking-[0.3em]"
       >
-        The GTR World
+        The GTA World
       </h1>
     </section>
   );

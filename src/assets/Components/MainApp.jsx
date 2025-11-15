@@ -10,6 +10,8 @@ import gsap from 'gsap'
 import "remixicon/fonts/remixicon.css"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Routes, BrowserRouter, Route } from 'react-router-dom'
+import ViceCity from './ViceCity'
+import GameSection from './GameSection'
 gsap.registerPlugin(ScrollTrigger);
 
 const MainApp = () => {
@@ -172,12 +174,18 @@ const MainApp = () => {
 
         </div>
         <div className="lower">
+          
         <Lower/>
         </div>
+        <div>
+          
         <WorldSection/>
+        </div>
+        <GameSection/>
         <div className="h-screen w-full justify-center flex items-center bg-gray-900">
           <Characters/>
     </div>
+    <ViceCity/>
     <Trailer/>
     
         <Footer/>

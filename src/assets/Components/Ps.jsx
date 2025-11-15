@@ -3,6 +3,9 @@ import React from 'react'
 import gsap from "gsap"
 import { motion } from 'framer-motion'
 import PsMap from './PsMap'
+import PhotoCarausel from './PhotoCarausel'
+import Footer from './Footeer'
+import ViceCity from './ViceCity'
 
 const Ps = () => {
   return (
@@ -41,8 +44,12 @@ const Ps = () => {
 
       }} className='absolute bottom-5 bg-amber-600 px-4 py-2 rounded-2xl right-7 z-50'>Choose Edition</motion.button>
       </div>
+      <div className="absolute z-20 btmbar bottom-0 left-0 w-full py-10 px-10 bg-linear-to-t from-black to-transparent"></div>
     </div>
     <PsMap/>
+    <PhotoCarausel/>
+    <ViceCity/>
+    <Footer/>
     </>
   )
 }
