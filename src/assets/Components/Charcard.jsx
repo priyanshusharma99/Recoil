@@ -26,7 +26,6 @@ const Charcard = (props) => {
     card.addEventListener("mouseenter", handleEnter);
     card.addEventListener("mouseleave", handleLeave);
 
-    // Scroll animation for card & heading
     gsap.fromTo(
       card,
       { y: 80, opacity: 0 },
@@ -69,7 +68,7 @@ const Charcard = (props) => {
   return (
     <div
       ref={cardRef}
-      className='w-[30vw] cardo h-[32vw] flex flex-col items-center justify-around bg-amber-200 rounded-2xl cursor-pointer opacity-0'
+      className='w-[30vw] cardo h-[32vw] flex flex-col items-center justify-evenly bg-amber-200 rounded-2xl cursor-pointer opacity-0'
     >
       <img
         ref={imageRef}
