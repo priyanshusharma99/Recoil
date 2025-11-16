@@ -118,9 +118,9 @@ const MainApp = () => {
         // markers: true
       }
     })
-      .fromTo(".car img",
-        { x: "100vw" },
-        { x: "-100vw", ease: "none" }
+      .fromTo(".car .gaadi",
+        { x: "150%" },
+        { x: "-10%", ease: "none" }
       );
 
   }, [showContent]);
@@ -210,8 +210,15 @@ const MainApp = () => {
               <WorldSection />
 
             </div>
-            <div className='w-full car relative h-screen bg-[url("F1826EAA-DA20-46F8-86D9-0384105C8336.png")]'>
-              <img className='w-[10vw] absolute bottom-0' src="D8C8CEF1-5BAD-428D-852E-9621C50C5AE3.png" alt="" />
+            <div className='w-full car relative h-screen bg-black'>
+              <img src="public/F1826EAA-DA20-46F8-86D9-0384105C8336.png" className='opacity-60' alt="" />
+              <div className='absolute text top-10 left-1/2 -translate-x-1/2 flex flex-col gap-4 text-center'>
+                <h1 className='text-[10rem] leading-none -ml-25 text-white'>grand</h1>
+                <h1 className='text-[10rem] leading-none ml-25 text-white'>theft</h1>
+                <h1 className='text-[10rem] leading-none -ml-25 text-white'>auto</h1>
+                <img className='absolute top-100 w-[10vw] left-100' src="public/gta-6-gta-6-logo-logotip-grand-theft-auto-vi-gta-vi-rockst-1-removebg-preview (1).png" alt="" />
+              </div>
+              <img className='w-[50vw] absolute gaadi -bottom-[20%]' src="D8C8CEF1-5BAD-428D-852E-9621C50C5AE3.png" alt="" />
             </div>
             <div className="main-continued w-full">
 

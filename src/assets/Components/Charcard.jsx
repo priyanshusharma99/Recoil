@@ -68,7 +68,7 @@ const Charcard = (props) => {
   return (
     <div
       ref={cardRef}
-      className='w-[30vw] cardo h-[32vw] flex flex-col items-center justify-evenly bg-amber-200 rounded-2xl cursor-pointer opacity-0'
+      className='w-[30vw] cardo h-[32vw] flex flex-col items-center justify-evenly bg-fuchsia-900 rounded-2xl cursor-pointer opacity-0'
     >
       <img
         ref={imageRef}
@@ -78,7 +78,7 @@ const Charcard = (props) => {
       />
       <h1
         ref={headingRef}
-        className='text-5xl mt-4 opacity-0'
+        className='text-5xl text-white mt-4 opacity-0'
       >
         {props.name}
       </h1>
