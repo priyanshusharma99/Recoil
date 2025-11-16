@@ -15,16 +15,22 @@ import { Routes, BrowserRouter, Route } from 'react-router-dom'
 import Ps from './assets/Components/Ps'
 import MainApp from './assets/Components/MainApp'
 import PrivacyNote from './assets/Components/PrivacyNote'
+import Terms from './assets/Components/Terms'
 gsap.registerPlugin(ScrollTrigger);
+import { useLocation } from "react-router-dom";
+import ScrollToTop from './assets/Components/ScrollToTop'
 
 const App = () => {
   return (
     <>
+    <ScrollToTop/>
     <Routes>
       <Route path='/' element={<MainApp/>}/>
       <Route path='/PS5' element={<Ps/>}/>
       <Route path='/Privacy' element={<PrivacyNote/>}/>
+      <Route path='/TermsOfService' element={<Terms/>}/>
     </Routes>
+    
     
     </>
   )

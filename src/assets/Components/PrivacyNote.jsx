@@ -12,7 +12,7 @@ const PrivacyNote = () => {
                     <h1>Rockstar Games</h1>
                 </div>
                 <div className="right flex gap-3 text-white font-[Arial] font-extrabold">
-                    <button onClick={()=>navigate("/")} className='border border-amber-50 px-3 py-2 rounded-2xl'>Home</button>
+                    <button onClick={()=>navigate("/")} className='border cursor-pointer border-amber-50 px-3 py-2 rounded-2xl'>Home</button>
                     <button className='bg-amber-600 px-3 py-2 rounded-2xl'>Who We Are</button>
                 </div>
             </nav>
