@@ -7,8 +7,10 @@ import {
     faYoutube,
     faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+    const navigate = useNavigate();
     return (
         <div className='w-full h-[65vh] bg-black font-[Arial]'>
             <div className='w-full h-20 bg-gray-800 flex justify-center items-center font-bold text-3xl text-white'>
@@ -31,6 +33,7 @@ const Footer = () => {
                 </div>
                 <div className="but text-white w-full flex justify-center gap-10">
                     <motion.button
+                    onClick={()=>navigate("/Privacy")}
                     whileHover={{
                         backgroundColor:"cyan",
                         color:"black"
