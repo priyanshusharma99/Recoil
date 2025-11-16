@@ -217,7 +217,7 @@ const MainApp = () => {
                 <h1 className='text-[10rem] leading-none -ml-25 text-white'>grand</h1>
                 <h1 className='text-[10rem] leading-none ml-25 text-white'>theft</h1>
                 <h1 className='text-[10rem] leading-none -ml-25 text-white'>auto</h1>
-                <img className='absolute top-100 w-[10vw] left-100' src="public/gta-6-gta-6-logo-logotip-grand-theft-auto-vi-gta-vi-rockst-1-removebg-preview (1).png" alt="" />
+                <img className='absolute top-100 w-[10vw] left-100' src="gta-6-gta-6-logo-logotip-grand-theft-auto-vi-gta-vi-rockst-1-removebg-preview (1).png" alt="" />
               </div>
               <img className='w-[50vw] absolute gaadi -bottom-[20%]' src="D8C8CEF1-5BAD-428D-852E-9621C50C5AE3.png" alt="" />
             </div>
