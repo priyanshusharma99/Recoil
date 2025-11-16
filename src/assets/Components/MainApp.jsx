@@ -223,7 +223,7 @@ const MainApp = () => {
             </div>
             <div className="main-continued w-full">
 
-              <div className="h-screen w-full justify-center flex items-center bg-[#a0436c]">
+              <div className="h-screen w-full justify-center flex items-center bg-[#000000]">
                 <Characters />
               </div>
 
