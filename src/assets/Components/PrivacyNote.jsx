@@ -1,28 +1,31 @@
 import React from 'react'
 import Footer from './Footeer'
+import { useNavigate } from 'react-router-dom'
 
 const PrivacyNote = () => {
-  return (
-    <div>
-      <nav className='w-full h-[10vh] bg-black flex justify-between items-center px-10'>
-        <div className="logo text-white text-4xl">
-            <h1>Rockstar Games</h1>
-        </div>
-        <div className="right flex gap-3 text-white font-[Arial] font-extrabold">
-            <button className='border border-amber-50 px-3 py-2 rounded-2xl'>Home</button>
-            <button className='bg-amber-600 px-3 py-2 rounded-2xl'>Who We Are</button>
-        </div>
-      </nav>
-      <main className='relative h-[50vh] overflow-hidden'>
-        <img src="360_F_200686969_GJ7zbz2qaNIE4dyHSbZkQXvNPzRuwlr3.jpg" className='w-full absolute top-0 left-0' alt="" />
-        <h1 className='text-white absolute top-20 left-100 font-[Arial] font-extrabold text-7xl'>Rockstar Games ®</h1>
-        <h1 className='text-white absolute top-40 left-125 font-[Arial] font-extrabold text-7xl'>Privacy Note</h1>
-      </main>
-      <div className='w-full flex justify-center'>
-      <div className="para w-[80vw] p-10">
-        <pre className='text-2xl whitespace-pre-wrap'>
-            {
-                `Last Modified: March 27, 2025
+
+    const navigate = useNavigate();
+    return (
+        <div>
+            <nav className='w-full h-[10vh] bg-black flex justify-between items-center px-10'>
+                <div className="logo text-white text-4xl">
+                    <h1>Rockstar Games</h1>
+                </div>
+                <div className="right flex gap-3 text-white font-[Arial] font-extrabold">
+                    <button onClick={()=>navigate("/")} className='border border-amber-50 px-3 py-2 rounded-2xl'>Home</button>
+                    <button className='bg-amber-600 px-3 py-2 rounded-2xl'>Who We Are</button>
+                </div>
+            </nav>
+            <main className='relative h-[50vh] overflow-hidden'>
+                <img src="360_F_200686969_GJ7zbz2qaNIE4dyHSbZkQXvNPzRuwlr3.jpg" className='w-full absolute top-0 left-0' alt="" />
+                <h1 className='text-white absolute top-20 left-100 font-[Arial] font-extrabold text-7xl'>Rockstar Games ®</h1>
+                <h1 className='text-white absolute top-40 left-125 font-[Arial] font-extrabold text-7xl'>Privacy Note</h1>
+            </main>
+            <div className='w-full flex justify-center'>
+                <div className="para w-[80vw] p-10">
+                    <pre className='text-2xl whitespace-pre-wrap'>
+                        {
+                            `Last Modified: March 27, 2025
 
 Welcome to Rockstar Games! We are a global gaming company headquartered in Los Angeles with offices and operations around the world. Rockstar Games, Inc. and its subsidiaries take your privacy and the protection of your personal information seriously. This Privacy Notice explains what personal info Rockstar Games collects when you visit or use the Riot Services, as well as ways we might use or disclose it. By “personal info,” we mean any information from or about an identified or identifiable person, including information that Rockstar Games can associate with an individual person. We’re only describing our own practices—this Notice doesn’t cover the practices of third parties we don’t own or control, including other companies you might interact with on or through the Riot Services (see Third-Party Websites and Services).
 
@@ -478,13 +481,13 @@ Attn: Legal Department
 PO Box 11989
 Dublin 2
 Ireland`
-            }
-        </pre>
-      </div>
-      </div>
-      <Footer/>
-    </div>
-  )
+                        }
+                    </pre>
+                </div>
+            </div>
+            <Footer />
+        </div>
+    )
 }
 
 export default PrivacyNote

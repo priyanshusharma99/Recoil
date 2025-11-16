@@ -10,12 +10,13 @@ import gsap from 'gsap'
 import "remixicon/fonts/remixicon.css"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ViceCity from './ViceCity'
+import { useNavigate } from 'react-router-dom'
 
 gsap.registerPlugin(ScrollTrigger);
 
 const MainApp = () => {
-  const [showContent, setShowContent] = useState(false)
-
+  const [showContent, setShowContent] = useState(false);
+  const navigate = useNavigate();
   useGSAP(() => {
     const tl = gsap.timeline();
     tl.to(".vimaskgroup", {
@@ -200,7 +201,7 @@ const MainApp = () => {
                     <i className="ri-arrow-down-line text-4xl font-semibold"></i>
                     <h3 className='text-xl'>Scroll Down</h3>
                   </div>
-                  <img src="/ps5.png" className='h-[65px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' alt="" />
+                  <div className='cursor-pointer' onClick={()=>navigate("/PS5")}><img src="/ps5.png" className='h-[65px] z-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' alt="" /></div>
                 </div>
 
               </div>
