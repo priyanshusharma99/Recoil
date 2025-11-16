@@ -16,10 +16,10 @@ const Footer = () => {
             </div>
             <div className='flex flex-col gap-8 p-10'>
                 <div className="social text-white flex gap-7 w-full justify-center">
-                    <motion.div whileHover={{ scale: 1.15 }}><FontAwesomeIcon icon={faDiscord} className="text-2xl" /></motion.div>
-                    <motion.div whileHover={{ scale: 1.15 }}><FontAwesomeIcon icon={faInstagram} className="text-2xl" /></motion.div>
-                    <motion.div whileHover={{ scale: 1.15 }}><FontAwesomeIcon icon={faYoutube} className="text-2xl" /></motion.div>
-                    <motion.div whileHover={{ scale: 1.15 }}><FontAwesomeIcon icon={faFacebook} className="text-2xl" /></motion.div>
+                    <motion.a href='https://discord.com/' target='_blank' whileHover={{ scale: 1.15 }}><FontAwesomeIcon icon={faDiscord} className="text-2xl" /></motion.a>
+                    <motion.a href='https://instagram.com/' target='_blank' whileHover={{ scale: 1.15 }}><FontAwesomeIcon icon={faInstagram} className="text-2xl" /></motion.a>
+                    <motion.a href='https://youtube.com/' target='_blank' whileHover={{ scale: 1.15 }}><FontAwesomeIcon icon={faYoutube} className="text-2xl" /></motion.a>
+                    <motion.a href='https://facebook.com/' target='_blank' whileHover={{ scale: 1.15 }}><FontAwesomeIcon icon={faFacebook} className="text-2xl" /></motion.a>
                 </div>
                 <div className="logo w-full flex justify-center">
                     <img src="public/cropped_circle_image.png" className='w-20' alt="" />
