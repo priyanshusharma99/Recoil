@@ -14,17 +14,16 @@ import WorldSection from './assets/Components/WorldSection'
 import { Routes, BrowserRouter, Route } from 'react-router-dom'
 import Ps from './assets/Components/Ps'
 import MainApp from './assets/Components/MainApp'
+import PrivacyNote from './assets/Components/PrivacyNote'
 gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
-  
-  
-  
   return (
     <>
     <Routes>
       <Route path='/' element={<MainApp/>}/>
       <Route path='/PS5' element={<Ps/>}/>
+      <Route path='/Privacy' element={<PrivacyNote/>}/>
     </Routes>
     
     </>
