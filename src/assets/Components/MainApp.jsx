@@ -212,7 +212,7 @@ const MainApp = () => {
 
             </div>
             <div className='w-full car relative h-screen bg-black'>
-              <img src="public/F1826EAA-DA20-46F8-86D9-0384105C8336.png" className='opacity-60' alt="" />
+              <img src="https://ccyks56ul1jj4tb4.public.blob.vercel-storage.com/F1826EAA-DA20-46F8-86D9-0384105C8336.png" className='opacity-60' alt="" />
               <div className='absolute text top-10 left-1/2 -translate-x-1/2 flex flex-col gap-4 text-center'>
                 <h1 className='text-[10rem] leading-none -ml-25 text-white'>grand</h1>
                 <h1 className='text-[10rem] leading-none ml-25 text-white'>theft</h1>
