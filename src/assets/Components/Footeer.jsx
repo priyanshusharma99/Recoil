@@ -64,6 +64,7 @@ const Footer = () => {
                     transition={{
                         duration:1
                     }}
+                    onClick={()=>navigate("/CompanyInfo")}
                      className='px-5 py-2 rounded-2xl'>
                         Company Information
                     </motion.button>

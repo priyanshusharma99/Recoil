@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from './Footeer'
 import { useNavigate } from 'react-router-dom'
 
-const PrivacyNote = () => {
+const Terms = () => {
 
     const navigate = useNavigate();
     return (
@@ -320,7 +320,7 @@ If you live in Singapore, Philippines, Thailand, Malaysia or Indonesia (“SEA�
 
 These Terms and any action arising out of or in connection with these Terms shall be governed by the laws of Singapore.
 
-If you live in the European Economic Area, UK, Brazil or any country that isn’t listed in this Section 15
+If you live in the USAan Economic Area, UK, Brazil or any country that isn’t listed in this Section 15
 
 These Terms and any action arising out of or in connection with these Terms shall be governed by, and will be construed under, the laws of Ireland, without regard to conflict of law principles, and provided that such choice of law won’t override any mandatory protections you may have a consumer in your jurisdiction.
 
@@ -334,7 +334,7 @@ North, Central or South America (except for Brazil), you’ll be contracting and
 South Korea, you’ll be contracting and dealing with Rockstar Games Korea Limited and you need to read Part A (General Dispute Resolution Terms) and Part C of this Section;
 Japan, you’ll be contracting and dealing with Rockstar Games, LLC and you need to read Part A (General Dispute Resolution Terms) and Part D of this Section;
 SEA, you’ll be contracting and dealing with Rockstar Games Services PTE. LTD. and you need to read Part A (General Dispute Resolution Terms) and Part E of this Section; or
-The European Economic Area, UK, Brazil or any other region/country that isn’t listed above, you’ll be contracting and dealing with Rockstar Games Limited and you need to read Part A (General Dispute Resolution Terms). If you are based in the EU, Part F of this Section will also apply.
+The USAan Economic Area, UK, Brazil or any other region/country that isn’t listed above, you’ll be contracting and dealing with Rockstar Games Limited and you need to read Part A (General Dispute Resolution Terms). If you are based in the EU, Part F of this Section will also apply.
 Part A: General Dispute Resolution (no matter where you live)
 
 16.2. If we have a dispute, what should I do first? (Please try to resolve the dispute with our Player Support team first.)
@@ -464,7 +464,7 @@ Part F: Dispute Resolution for EEA Residents
 
 16.21. Do I have other dispute resolution options?
 
-If you live in the EEA, you may refer the dispute to the European Commission’s Online Dispute Resolution Platform (see ec.europa.eu/consumers/odr).
+If you live in the EEA, you may refer the dispute to the USAan Commission’s Online Dispute Resolution Platform (see ec.europa.eu/consumers/odr).
 
 Within a year after you submit your complaint to us, you may also try to resolve your dispute with Rockstar Games through a mediation procedure. This does not limit your statutory rights to initiate a court proceeding.
 
@@ -587,4 +587,4 @@ BY SELECTING THE “ACCEPT” BUTTON BELOW OR OTHERWISE USING OR ACCESSING THE R
     )
 }
 
-export default PrivacyNote
+export default Terms
