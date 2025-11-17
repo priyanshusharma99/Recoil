@@ -41,7 +41,7 @@ const Footer = () => {
                     transition={{
                         duration:1
                     }}
-                     className='px-5 py-2 rounded-2xl'>
+                     className='px-5 py-2 rounded-2xl cursor-pointer'>
                         Privacy Note
                     </motion.button>
                     <motion.button
@@ -53,7 +53,7 @@ const Footer = () => {
                         duration:1
                     }}
                     onClick={()=>navigate("/TermsOfService")}
-                     className='px-5 py-2 rounded-2xl'>
+                     className='px-5 py-2 rounded-2xl cursor-pointer'>
                         Terms of Service
                     </motion.button>
                     <motion.button
@@ -65,7 +65,7 @@ const Footer = () => {
                         duration:1
                     }}
                     onClick={()=>navigate("/CompanyInfo")}
-                     className='px-5 py-2 rounded-2xl'>
+                     className='px-5 py-2 rounded-2xl cursor-pointer'>
                         Company Information
                     </motion.button>
                     <motion.button
@@ -76,7 +76,7 @@ const Footer = () => {
                     transition={{
                         duration:1
                     }}
-                     className='px-5 py-2 rounded-2xl'>
+                     className='px-5 py-2 rounded-2xl cursor-pointer'>
                         Cookie Preferences
                     </motion.button>
                 </div>
