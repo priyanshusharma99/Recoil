@@ -11,6 +11,7 @@ import "remixicon/fonts/remixicon.css"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ViceCity from './ViceCity'
 import { useNavigate } from 'react-router-dom'
+import { scale } from 'framer-motion'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,7 +19,7 @@ const MainApp = () => {
   const [showContent, setShowContent] = useState(false);
   const navigate = useNavigate();
   useGSAP(() => {
-    const tl = gsap.timeline();
+      const tl = gsap.timeline();
     tl.to(".vimaskgroup", {
       rotate: 10,
       transformOrigin: "50% 50%",
@@ -127,9 +128,6 @@ const MainApp = () => {
   }, [showContent]);
 
 
-  const cursor = document.querySelector(".cursoro");
-
-
   return (
     <div>
 
@@ -138,7 +136,9 @@ const MainApp = () => {
         onMouseMove={(e) => {
           gsap.to(".cursoro", {
             x: e.clientX - 12.5,
-            y: e.clientY - 12.5
+            y: e.clientY - 12.5,
+            duration:0.1,
+            overwrite:"auto"
           });
         }}
       >
@@ -187,7 +187,8 @@ const MainApp = () => {
                       <div className="w-8 h-1 bg-white"></div>
                       <div className="w-5 h-1 bg-white"></div>
                     </div>
-                    <h3 className='text-4xl text-white -mt-1.5'>RockStar</h3>
+                    <h3
+                    className='text-4xl text-white -mt-1.5 cursor-pointer'>RockStar</h3>
                   </div>
                 </div>
                 <div className="image w-full h-screen relative overflow-hidden">
